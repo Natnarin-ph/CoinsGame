@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: rgb(126, 228, 194);
+            font-family: 'Cute Font', cursive;
+            text-align: center;
+            font-size: 35px;
+        }
+        .topic{
+            font-size: 100px;
+            font-weight: bold;
+            margin-top: 200px;
+        }
+
+        .btn{
+            background-color: black;
+            border-radius: 10px;
+            color:rgb(126, 228, 194);
+            font-weight: bold;
+            font-size: 15px;
+            width: 80px;
+            height:30px;
+
+        }
+        .btn:hover{
+            background-color:rgb(126, 228, 194);
+            color: black;
+        }
+
+        input[type=text] {
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 10px;
+            width: 150px;
+            height:40px;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="topic">Enter your player name</div>
+    <form action = index.php method="GET">
+        <div><label for="fname">Player name:</label></div>
+        <input type="text" id="name" name="name" placeholder="name" required><br><br>
+        <input class="btn" type="submit" value="Start" name="submit">
+    </form>
+
+    
+</body>
+</html>
